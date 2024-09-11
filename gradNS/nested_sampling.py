@@ -6,9 +6,9 @@ Base Nested Sampler class
 
 import torch
 import time
-from gradNS.utils import uniform, get_knn_clusters, save_to_file, read_from_file
-from gradNS.param import Param, NSPoints
-from gradNS.summaries import NestedSamplingSummaries
+from GGNS.gradNS.utils import uniform, get_knn_clusters, save_to_file, read_from_file
+from GGNS.gradNS.param import Param, NSPoints
+from GGNS.gradNS.summaries import NestedSamplingSummaries
 from getdist import MCSamples, plots
 import anesthetic
 from math import log, exp

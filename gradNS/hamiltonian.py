@@ -1,6 +1,6 @@
 import torch
-from gradNS.dynamic import DynamicNestedSampler
-from gradNS.param import Param, NSPoints
+from GGNS.gradNS.dynamic import DynamicNestedSampler
+from GGNS.gradNS.param import Param, NSPoints
 from numpy import clip, pi
 import tracemalloc
 import gc

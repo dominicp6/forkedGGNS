@@ -2,7 +2,7 @@ import gc
 
 import torch
 from numpy.random import randint, choice
-from gradNS.utils import save_to_file, read_from_file
+from GGNS.gradNS.utils import save_to_file, read_from_file
 
 # Default floating point type
 dtype = torch.float32
@@ -106,7 +106,6 @@ class NSPoints:
                    for i in (values, logL, logweights)), "Inputs must be tensors"
         assert values.shape[1] == self.nparams, "Wrong dimensions"
         assert values.shape[0] == logweights.shape[0] == logL.shape[0], "logweights and logL must be arrays"
-
         self.values = torch.cat([self.values, values], dim=0)
         self.logL = torch.cat([self.logL, logL], dim=0)
         self.logweights = torch.cat([self.logweights, logweights], dim=0)
